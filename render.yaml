@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: bitespeed-identity-reconciliation
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    buildCommand: "docker build -t nestjs-app ."
+    startCommand: "docker run -p 3000:3000 nestjs-app"
+    envVars:
+      - key: DATABASE_HOST
+        value: your-database-host
+      - key: DATABASE_PORT
+        value: your-database-port
+      - key: DATABASE_USER
+        value: your-database-user
+      - key: DATABASE_PASSWORD
+        value: your-database-password
+      - key: DATABASE_NAME
+        value: your-database-name
