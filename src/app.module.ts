@@ -7,7 +7,7 @@ import { Contact } from './contacts/contact.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: '127.0.0.1',
+      host: 'mysql',
       port: 3306,
       username: 'root',
       password: 'root', // replace with your actual MySQL root password
