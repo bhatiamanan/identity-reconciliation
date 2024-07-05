@@ -10,10 +10,10 @@ import { Contact } from './contacts/contact.entity';
       host: 'mysql',
       port: 3306,
       username: 'root',
-      password: 'root', // replace with your actual MySQL root password
+      password: 'root',
       database: 'bitespeed',
       entities: [Contact],
-      synchronize: true, // set to true to automatically create tables
+      synchronize: true,
     }),
     ContactsModule,
   ],
