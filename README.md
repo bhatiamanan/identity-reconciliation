@@ -9,7 +9,7 @@ This project is a web service designed to reconcile customer identities based on
 
 ### /identify
 
-- **URL**: `http://3.93.54.208/identify`
+- **URL**: `http://54.196.70.30/identify`
 - **Method**: POST
 
 - **Request Body**:
